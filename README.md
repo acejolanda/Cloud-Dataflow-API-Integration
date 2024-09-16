@@ -17,8 +17,8 @@ The provided code enables data collection through APIs and stores the data in a 
 
 I created a local SQL database schema, containing tables for both static and dynamic data. The schema creation script is available in `project_schema.sql`.
 
-The `set_up_database.py` script is designed to be executed once locally. It collects the static data and stores it in the corresponding tables in the SQL database.
+The `static_functions.py` script is designed to be executed once locally. It collects the static data and stores it in the corresponding tables in the SQL database.
 
-For collecting dynamic data, such as weather and flight information, cloud functions I will use cloud run functions on Google Cloud Platform (GCP). These functions are defined in cloud_functions.py and can be deployed on GCP as cloud run functions. By deploying cloud functions, I can ensure that the corresponding tables always contain up-to-date data.
+For collecting dynamic data, such as weather and flight information, cloud functions I will use cloud run functions on Google Cloud Platform (GCP). These functions are defined in `cloud_functions.py` and can be deployed on GCP as cloud run functions. By deploying cloud functions, I can ensure that the corresponding tables always contain up-to-date data.
 These functions can be scheduled using cron expressions to run at specific times/intervals. The functions for the data collection of the dynamic part of the project use API's like the functions of the static data category. However, the dynamic data functions must access the data of the static data category, which is why I use a data pipeline between the Google Cloud and the SQL database.
 The newly collected dynamic data is appended to the respective tables via the data pipeline, and "Gans" can use this information to optimize the distribution and availability of e-scooters across cities (and their airports).
