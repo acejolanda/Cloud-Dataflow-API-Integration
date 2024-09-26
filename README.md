@@ -18,8 +18,11 @@ The provided code enables data collection through APIs and stores the data in a 
 I created a local SQL database schema, containing tables for both static and dynamic data. The schema creation script is available in `project_schema.sql` and the schema itself is shown below:
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/schema.pdf">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/images/schema-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/images/schema-light.png">
+  <img alt="Schema" src="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/images/schema-light.png">
 </picture>
+
 
 The `set_up_database.py` script is designed to be executed once locally. It collects the static data and stores it in the corresponding tables in the SQL database.
 
