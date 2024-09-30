@@ -19,7 +19,7 @@ I created a local SQL database schema, containing tables for both static and dyn
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/schema´.png?raw=true">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/schema.png?raw=true">
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/schema.png?raw=true">
     <img alt="Schema Diagramm" src="https://github.com/acejolanda/Cloud-Dataflow-API-Integration/blob/main/schema.png?raw=true" width="100%">
   </picture>
